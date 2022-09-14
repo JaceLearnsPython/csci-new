@@ -1,0 +1,40 @@
+body{
+    background-color: #F0F4EF;
+    margin: 0px;
+   
+}
+header{
+    text-align: center;  
+    background-color: #b4cded;
+    padding: 15px;
+
+}
+footer{
+    text-align: center;
+    background-color: #b4cded;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+nav{
+    text-align: center;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+nav a:hover, nav a:link, nav a, nav a:visited, nav a:active{
+    text-decoration: none;
+    color: white;
+}
+#images{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5%;
+    
+}
+footer p{
+    color: white;
+}
+main{
+    min-height:100vh;
+}

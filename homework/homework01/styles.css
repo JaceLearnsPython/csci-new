@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Your CSS Code Here! */
+
+nav ul{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    margin-left: auto;
+    padding-right: 10px;
+    justify-content: space-between;
+    width: 300px;   
+    margin-top: 0px;
+    
+}
+nav a:hover, nav a:link, nav a, nav a:visited, nav a:active{
+    text-decoration: none;
+    color: white;
+}
+header {
+   background-color:royalblue;
+}
+#profile-pic {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+header h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+    font-size: 150%;
+    font-family: 'Major Mono Display', monospace;
+    color: white;
+    height: 200px;
+}
+#about{
+    margin: 7%;
+    text-align: left;
+}
+h2{
+    font-family: 'Major Mono Display', monospace;
+
+}
+p{
+    font-family: 'Poppins', sans-serif;
+
+}
+#projects{
+    background-color: lightgray;
+}
+#projects h2{
+    margin-left: 7%;
+    padding-top: 20px;
+}
+.project-holder{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin: 5%;
+    justify-items: center;
+    
+}
+.card{
+    max-width: 300px;
+    margin-bottom: 50px;
+}
+.card img{
+    width: 130%;
+
+}
+#contact{
+    margin: 100px;
+    margin-left: 300px;
+}
+#contact h2{
+    margin-bottom: 50px;
+}
+#contact p{
+    max-width: 1000px;
+}
+.contact-details{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    
+}
+input, #message{
+    background-color: lightgray;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+#message{
+    width:500px;
+    height: 150px;
+}
+#name{
+    width: 200px;
+    height: 50px;
+}
+#email{
+    width: 277px;
+    height: 50px;
+}
+#contact-info{
+    margin-left: 100px;
+}
+#submit{
+    background-color: royalblue;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    width: auto;
+    height: 170px;
+}
+
+
+

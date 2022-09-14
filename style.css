@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+
+
+/* *{ */
+    /* box-sizing: border-box; */
+/* } */
+
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    padding-bottom: 100px;
+    
+}
+header, section {
+    padding: 20px;
+}
+li {
+    line-height: 1.5em;
+}
+
+header{
+    text-indent: 100px;
+    padding-top: 10px;
+    background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
+    background: linear-gradient(to right, #0ABFBC, #FC354C);
+    font-family: 'Nanum Brush Script', cursive;
+    font-size:x-large;
+   
+}
+section li, td,th{
+    font-family: 'Space Mono', monospace;
+    
+}
+main p{
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+    text-decoration: none;
+    color:blueviolet;
+    font-weight: 500;
+}
+
+a:hover{
+    text-decoration-color: aqua;
+}
+table{
+    width: 800px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left: 40px;
+    border-spacing: 20px;
+}
+#tutorials li, #homework li, #lectures li{
+    text-indent: 60px;
+}
+

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Silkscreen&display=swap');
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    margin: 0px;
+}
+
+h1{
+    color:rgb(36, 161, 80);
+    font-family: Silkscreen;
+    background-color: darkslategray;
+    height: 100px;
+    padding-top: 50px;
+    text-align: center;
+
+}
+header{
+    text-align: center;
+}
+main section{
+    display:inline-block;
+    background-color: azure;
+    margin-left: 120px;
+    margin-top: 25px;
+
+}
+main{
+    margin-left: 55px;
+    margin-right: 55px;
+}
+img:hover{
+    transform: scale(1.1);
+}
