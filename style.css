@@ -15,6 +15,7 @@ body {
 }
 header, section {
     padding: 20px;
+    padding-left: 50px;
 }
 li {
     line-height: 1.5em;
@@ -33,9 +34,11 @@ section li, td,th{
     font-family: 'Space Mono', monospace;
     
 }
-main p{
+main > p{
     font-family: 'Space Mono', monospace;
     text-align: center;
+    
+    
 }
 
 a, a:link, a:visited, a:active, a:hover {
@@ -56,5 +59,8 @@ table{
 }
 #tutorials li, #homework li, #lectures li{
     text-indent: 60px;
+    padding-top: 10px;
 }
-
+#t4list, #t5list{
+    padding-left: 30px;
+}
