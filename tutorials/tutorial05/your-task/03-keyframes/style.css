@@ -40,10 +40,9 @@
     /* Add animation properties for the sun here: */
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
     animation-name: sunrise;
     animation-duration: 10s;
-    animation-delay: 5s;
+    
     
 }
 
@@ -70,9 +69,9 @@
 
 @keyframes sunrise {
     from { 
-        bottom: calc(100vw);
+        top: calc(100vh - 40px);
     }
     to { 
-        bottom: -100px;
+        top: 20px;
     }
 }

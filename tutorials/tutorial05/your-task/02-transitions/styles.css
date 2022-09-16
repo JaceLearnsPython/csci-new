@@ -40,7 +40,7 @@ section {
 #section2 { 
     background: blueviolet;
     color: aliceblue;
-    transition: all 0.3s ease-in;
+    transition: all 1.4s ease-in;
 }
 
 #section2:hover { 
