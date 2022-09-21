@@ -84,6 +84,13 @@ footer {
 /***************************/
 
 /* Your Code Here */
+aside{
+    padding: 15px
+}
+aside i{
+    padding: 10px;
+    max-height: 30px;
+}
 
 
 
