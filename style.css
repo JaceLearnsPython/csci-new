@@ -61,6 +61,9 @@ table{
     text-indent: 60px;
     padding-top: 10px;
 }
-#t4list, #t5list{
+#t4list, #t5list, #t6list{
     padding-left: 30px;
+}
+#listTitle{
+    color: black;
 }
