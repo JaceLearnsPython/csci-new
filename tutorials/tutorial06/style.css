@@ -127,3 +127,7 @@ h1 {
     line-height: 2.0;
 
 }
+.dyslexia-mode p, h2{
+    padding-left: 20%;
+    padding-right: 20%;
+}

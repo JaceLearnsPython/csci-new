@@ -87,9 +87,10 @@ footer {
 aside{
     padding: 15px
 }
-aside i{
+aside a{
     padding: 10px;
     max-height: 30px;
+    padding-left: 15px;
 }
 
 

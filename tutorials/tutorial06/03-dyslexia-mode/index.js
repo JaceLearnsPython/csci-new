@@ -3,5 +3,12 @@
   https://www.smashingmagazine.com/2021/11/dyslexia-friendly-mode-website/
 */
 const dyslexia = ev => {
-  document.querySelector('body').className = "dyslexia-mode"
+
+  if(document.querySelector('body').className == "dyslexia-mode"){
+
+    document.querySelector('body').className = "";
+  }
+  else{
+    document.querySelector('body').className = "dyslexia-mode"
+  }
 }
