@@ -223,14 +223,19 @@ img{
     }
    #mainNav{
         min-width: 300px;
+        padding-left: 30px;
    }
     .artist-card{
         min-width: 220px;
         max-width: 220px;
     }
+    header{
+        width: 100vh
+    }
     #upgrade{
         display: none;
     }
+  
     aside{
         display: none;
     }
