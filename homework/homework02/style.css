@@ -195,9 +195,10 @@ img{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        
     }
     .artist-card{
-        flex: auto;
+        /* flex: auto; */
         max-width: 200px;
         min-width: 200px;
     }
@@ -213,7 +214,6 @@ img{
     #featered-content{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
     }
     .artist-card{
         min-width: 170px;
@@ -225,7 +225,9 @@ img{
     #sidebar{
         display: none;
         
+        
     }
 }
 
-
+.controls button{
+}
