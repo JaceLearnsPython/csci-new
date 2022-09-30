@@ -25,6 +25,12 @@ function setup() {
 
     // Exercise 4:
     drawFace(1100, 400, 100);
+    drawFace(100, 400, 200);
+    drawFace(400, 100, 100);
+    drawFace(200, 200, 100);
+    
+
+
 
     drawGrid(canvasWidth, canvasHeight);
 }
@@ -63,18 +69,33 @@ function drawBullseye(centerX, centerY, size) {
 // modify this function so that it accepts and honors
 // the following 3 parameters: centerX, centerY, and size
 function drawFace(centerX, centerY, size) {
-    const eyeSize = size * 0.05;
-    fill('white');
-    circle(centerX, centerY, size);
-    fill('black');
-    circle(centerX + 3 * eyeSize, centerY - eyeSize, eyeSize);
-    circle(centerX - 3 * eyeSize, centerY - eyeSize, eyeSize);
-    noFill()
-    curve(
-        600, 850,       // control point
-        700, 450, 
-        900, 450,
-        1000, 850        // control point
-    );
 
+    let eyeSize = size * 0.15;
+    let eyeCalc = 1.3 * eyeSize;
+    let mouthY = centerY + centerY * 0.07;
+    let mouthLeftX = centerX - size / 4;
+    let mouthRightX = centerX + size / 4;
+    
+
+
+
+    fill('yellow');
+    circle(centerX, centerY, size); // face
+    fill('blue');
+    circle(centerX + eyeCalc, centerY - eyeSize, eyeSize); // eye right
+    circle(centerX - eyeCalc, centerY - eyeSize, eyeSize); // eye left
+   
+    // Line for mouth
+    strokeWeight(size / 20);
+    // line(mouthLeftX, mouthY, mouthRightX, mouthY);
+    strokeWeight(1)
+
+    noFill();
+    curve(
+        mouthLeftX, mouthY - size,       // control point
+        mouthLeftX, mouthY,             // first point
+        mouthRightX, mouthY,           // second point
+        mouthRightX, mouthY - size    // control point
+    );
+    
 }
