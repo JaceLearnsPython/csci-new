@@ -27,7 +27,7 @@ function setup() {
     drawFace(1100, 400, 100);
     drawFace(100, 400, 200);
     drawFace(400, 100, 100);
-    drawFace(200, 200, 100);
+    drawFace(200, 200, 50);
     
 
 
