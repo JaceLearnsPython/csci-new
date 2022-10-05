@@ -1,0 +1,5 @@
+Code Repository: https://github.com/JaceLearnsPython/csci185-coursework
+
+Homepage: https://jacelearnspython.github.io/csci185-coursework/
+
+Homework: https://jacelearnspython.github.io/csci185-coursework/homework/homework03/index.html
