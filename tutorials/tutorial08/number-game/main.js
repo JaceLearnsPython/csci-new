@@ -2,14 +2,16 @@
 const secret = Math.floor(Math.random() * 99) + 1;
 document.querySelector('#secret').innerHTML = secret;
 
+let counter = 0;
 
 function check() {
     // your code here.
     console.log("your code here!");
 
     let num = document.querySelector("#guess").value;
-    let counter = 0;
 
+    // Counter only activates on the first call
+    // How to make it count every button click?
     counter++;
 
     if(num < 0){
