@@ -4,29 +4,42 @@ document.querySelector('#secret').innerHTML = secret;
 
 let counter = 0;
 
+
 function check() {
     // your code here.
     console.log("your code here!");
 
     let num = document.querySelector("#guess").value;
+    num = Number(num);
 
-    // Counter only activates on the first call
-    // How to make it count every button click?
     counter++;
+    document.querySelector('#num-guesses').innerHTML =
+     'You have guessed: ' + counter + ' time(s).'
 
     if(num < secret){
-        alert("The value of your guess is too low. Try again!");
+        // alert("The value of your guess is too low. Try again!");
+
+        document.querySelector('#message').innerHTML = 'Your guess was too low!'
     }
     else if(num > secret){
-        alert("The value is too high. Try again!")
+        // alert("The value is too high. Try again!")
+        document.querySelector('#message').innerHTML = 'Your guess was too High!'
+
     }
-    if(num == secret){
-        alert("Awesome job! You got the right number!" + 
-            " It took you " + counter + " tries to get it!")
+    else{
+        // alert("Awesome job! You got the right number!" + 
+            // " It took you " + counter + " tries to get it!")
 
-
+        document.querySelector('#message').innerHTML = 'You got it!'
         document.querySelector('#celebrate').className = "";
+    }
 
+    if(counter == 6){
+        alert(
+            "You have used all your attempts. The page will reload and choose a different Number. Good luck!"
+        )
+
+		window.location.reload();
     }
     
 }
