@@ -14,10 +14,10 @@ function check() {
     // How to make it count every button click?
     counter++;
 
-    if(num < 0){
+    if(num < secret){
         alert("The value of your guess is too low. Try again!");
     }
-    if(num > 100){
+    else if(num > secret){
         alert("The value is too high. Try again!")
     }
     if(num == secret){

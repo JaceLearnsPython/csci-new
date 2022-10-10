@@ -10,7 +10,7 @@ function setup() {
     createCanvas(canvasWidth, canvasHeight);
 
     // fill('red');
-    noFill();
+    // noFill();
     circle(x, y, width);
 
     drawGrid(canvasWidth, canvasHeight);
@@ -41,11 +41,23 @@ const moveController = ev => {
     else if(ev.code === 'ArrowDown'){
         y = y + 10;
     }
+    else if(ev.code == 'Space'){
+        width = width + 5;
+    }
+    else if(ev.code == 'KeyR'){
+        fillColor = 'red'
+    }
+    else if(ev.code == 'KeyP'){
+        fillColor = 'purple'
+    }
+    else if(ev.code == 'KeyW'){
+        fillColor = 'white'
+    }
 
-
+    fill(fillColor)
     // redraw circle:
     clear();
-    noFill();
+    // noFill();
     circle(x, y, width);
     drawGrid(canvasWidth, canvasHeight);
 
@@ -58,4 +70,8 @@ document.addEventListener('keyleft', moveController);
 document.addEventListener('keyright', moveController);
 document.addEventListener('keyup', moveController);
 document.addEventListener('keydown', moveController);
+document.addEventListener('space', moveController);
+document.addEventListener('r', moveController);
+
+
 

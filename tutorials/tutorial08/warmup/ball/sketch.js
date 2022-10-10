@@ -7,10 +7,25 @@ function setup() {
 
 let x = 200;
 let speed = 5;
+let width = 50;
+let calc = width / 2;
 
 function draw() {
-    // frameRate(4);
+    // frameRate(2);
     clear();
+
+    if(x >= 500 - calc){
+        // speed = (speed + 1) * - 1;
+        speed = speed - 5
+        width = width + 5;
+    }
+    if(x <= 150 + calc){
+        // speed = -1 * speed;
+        speed = speed + 5;
+        width = width + 5;
+
+    }
+
 
     // draw walls:
     fill('red');
@@ -19,9 +34,11 @@ function draw() {
 
     // draw circle:
     fill('black');
-    circle(x, canvasHeight/2, 50);
+    circle(x, canvasHeight/2, width);
     x += speed;
     console.log("x position is:", x);
-
     drawGrid(canvasWidth, canvasHeight);
+
+
+
 }
