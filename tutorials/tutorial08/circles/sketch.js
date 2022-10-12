@@ -14,7 +14,7 @@ function setup() {
     drawGrid(canvasWidth, canvasHeight);
 
     let counter = 200;
-    let i = 0;
+    let count2 = 0;
     let count3 = 0;
 
     let x = 100;
@@ -25,28 +25,51 @@ function setup() {
     while(counter < 450){
     
         noFill()
-        circle(x, counter, 50);
+        circle(x, counter, size);
 
-        counter = counter + 50;
+        counter = counter + size;
     }
-    while(i < 4){
+    while(count2 < 5){
 
         circle(300, 150, size)
 
-        i++;
+        count2++;
         size = size + 50;
 
     }
-    while(count3 < 5){
 
-        circle(600, y, size2)
+    let fillColor = 'gray';
+
+    while(count3 < 30){
+
+        if(fillColor == 'gray'){
+
+            fillColor = 'blue'
+            fill(fillColor);
+        }
+        else if(fillColor == 'blue'){
+            fillColor = 'hotpink'
+            fill(fillColor)
+        }
+        else{
+            fillColor = 'gray'
+            fill(fillColor);
+        }
+        
+        // 4th color
+        strokeWeight(4);
+        stroke('green')
+
+        circle(800, y, size2)
 
         count3++;
 
         y = y + 24;
-        size2 = size2 + 50;
+        size2 = size2 + 20;
 
     }
+
+
 
 
 }
