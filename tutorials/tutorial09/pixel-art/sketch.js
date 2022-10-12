@@ -40,7 +40,7 @@ function setup() {
     let heartY = 350; // Heart Y position
 
     for(let i = 0; i < 11; i++){
-        drawRow(frank[i], 150, frankY, 25)
+        drawRow(frank[i], 150, frankY, 25,)
 
         frankY = frankY + 25;
     }
