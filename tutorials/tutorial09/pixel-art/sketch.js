@@ -65,7 +65,7 @@ function setup() {
 
 function drawRow (row, topX, topY, pixelWidth) {
 
-    let colorOptions = ['transparent', 'hotpink', 'black', 'white']
+    let colorOptions = ['transparent','hotpink', 'black', 'white']
 
     for (let i = 0; i < row.length; i++) {
         const color = colorOptions[row[i]];
