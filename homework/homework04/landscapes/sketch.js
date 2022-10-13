@@ -4,14 +4,6 @@ const canvasHeight = window.innerHeight;
 async function setup() {
     createCanvas(canvasWidth, canvasHeight);
     
-    // picks a random number between 0 and 100:
-    let rando = Math.random() * 100;
-    console.log(rando);
-    
-    // picks a random number between 10 and 500:
-    rando = Math.random() * 490 + 10;
-    console.log(rando);
-    
     // draws 4 stars: 
     strokeWeight(0);
     fill('white');
@@ -19,8 +11,41 @@ async function setup() {
     circle(50, 400, 1.5);
     circle(600, 287, 3);
     circle(400, 143, 1.5);
+    
+    // Counter 
+    let i = 0;
+
+    // do - while loop to make stars
+    do{
+        const x = Math.random() * canvasWidth;
+        const y = Math.random() * canvasHeight;
+        const width = Math.random() * 2 + 0.5;
+
+        circle(x, y, width)
+
+         i++;
+
+    }
+    while(i < 1000)
+
+   // constenllation  Big Dipper
+
+    fill('red')
+    circle(55, 310, 3.5)
+    circle(100, 340, 3.5)
+    circle(120, 380, 3.5)
+    circle(140, 430, 3.5)
+    circle(200, 500, 3.5)
+    circle(125, 480, 3.5)
+    circle(160, 520, 3.5)
+
+
+
+
+
 }
 
+// examples?
 function drawStars() {
     strokeWeight(0);
     fill('white');
