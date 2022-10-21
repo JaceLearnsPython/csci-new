@@ -1,0 +1,9 @@
+https://github.com/JaceLearnsPython/csci185-coursework - repository
+
+https://jacelearnspython.github.io/csci185-coursework/ - homepage
+
+Extra Credit:
+
+For the Landscape, I did a constelation which I filled red to make it obvious.
+
+For the cars / animation, I made an extra car and made the cars increase speed gradually.

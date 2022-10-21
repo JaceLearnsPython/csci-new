@@ -79,6 +79,6 @@ function drawPixelArt(grid, topX, topY, pixelWidth) {
     for (let i = 0; i < grid.length; i++) {
 
         drawRow(grid[i], topX, topY, pixelWidth);
-        topY += pixelWidth; // Why did you choose this value?
+        topY += pixelWidth;
     }
 }

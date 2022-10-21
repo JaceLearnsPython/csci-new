@@ -25,7 +25,7 @@ async function setup() {
 
          i++;
 
-    }
+    }    
     while(i < 1000)
 
    // constenllation  Big Dipper
