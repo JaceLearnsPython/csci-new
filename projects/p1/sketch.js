@@ -42,6 +42,7 @@ let pig = {
     size: 70,
     speed: 3
 }
+// pigs
 let pig1 = {
     x: 500,
     y: 300,
@@ -55,7 +56,9 @@ let pig2 = {
     speed: 1.5
 }
 
+// array for the missiles
 const missiles = [];
+
 
 async function setup() {
 
@@ -63,8 +66,9 @@ async function setup() {
 
 
 }
-
+// for math sin
 let counter = 0;
+
 function draw(){
     clear()
     document.body.style.backgroundImage = "url('10791349.jpg')";
@@ -270,14 +274,8 @@ function shoot(){
     }
     missiles.push(missile);
 }
-function mouseDragged() {
-    
-    if (ball1 < ball1/2) {
-        ball1.x = mouseX;
-        ball1.y = mouseY;
-    } 
 
-}
+
 // listener
 document.addEventListener('keyup', moveController);
 

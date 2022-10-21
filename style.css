@@ -57,7 +57,7 @@ table{
     margin-left: 40px;
     border-spacing: 20px;
 }
-#tutorials li, #homework li, #lectures li{
+#tutorials li, #homework li, #lectures li, #projects li{
     text-indent: 60px;
     padding-top: 10px;
 }
