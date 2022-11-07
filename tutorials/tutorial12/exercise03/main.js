@@ -14,5 +14,5 @@ for(let i = 0; i < restaurants.length; i++){
 
         console.log(restaurants[i]);
 
-        document.querySelector('#output').innerHTML += " " + restaurants[i];
+        document.querySelector('#output').innerHTML += restaurants[i] + "<br>";
 }
