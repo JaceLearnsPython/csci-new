@@ -1,6 +1,6 @@
 /*
 * Resume template
-* Created by : Ahmed Essa
+* Create by : Ahmed Essa
 * website : www.ahmedessa.net
 */
 
@@ -247,7 +247,7 @@ nav li {
     margin: 10px;
 }
 
-nav li a {
+nav li a, .dropbtn {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #444;
@@ -255,7 +255,7 @@ nav li a {
     font-weight: bold;
 }
 
-.bg-nav {
+.bg-nav{
     background: #fff;
     border-bottom: 1px solid #f3f3f3
 }
@@ -264,12 +264,12 @@ nav li a {
     padding: 10px;
 }
 
-a:focus {
+a:focus, .dropbtn {
     color: #444;
     text-decoration: none;
 }
 
-a:hover {
+a:hover, .dropbtn:hover {
     color: #425BB5;
     text-decoration: none;
 }
@@ -277,6 +277,34 @@ a:hover {
 a.active {
     color: #425BB5;
 }
+.dropbtn{
+    border: none;
+    background: transparent;
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content {
+   
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+.dropdown:hover .dropdown-content {
+
+    display: block;
+}
+.dropdown-content a:hover {
+
+    color:#425BB5;
+}
+
+
+
 
 
 /* home section
@@ -581,8 +609,8 @@ a.active {
 }
 
 .portfolio_item img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%); */
+    /* filter: grayscale(100%); */
 }
 
 .portfolio-padding {
@@ -634,7 +662,8 @@ a.active {
 
 #contact {
     padding: 100px 0;
-    background: #f3f3f3
+    background: #f3f3f3;
+    min-height: 100vh;
 }
 
 #contact-form input,

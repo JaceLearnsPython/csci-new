@@ -48,6 +48,14 @@
     When using ajaxForm, the ajaxSubmit function will be invoked for you
     at the appropriate time.
 */
+$(document).ready(function() {
+    $('#myForm').on('submit', function(e) {
+        e.preventDefault(); // <-- important
+        $(this).ajaxSubmit({
+            target: '#output'
+        });
+    });
+});
 
 /**
  * Feature detection

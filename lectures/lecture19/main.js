@@ -51,8 +51,8 @@ function displayCourse(course) {
         <h1>${course.Code}: ${course.Title}</h1>
         <p>${instructor} | Meets ${course.Days}</p>
         <p> ${course.StartTime} </p>
-        </section>`;
-        document.querySelector('#results').innerHTML += template;
+        </section>`
+        document.querySelector('#results').innerHTML += template;  
       
         }
 

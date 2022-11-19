@@ -22,13 +22,12 @@ li {
 }
 
 header{
-    text-indent: 100px;
+    padding-left: 50px;
     padding-top: 10px;
     background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
     background: linear-gradient(to right, #0ABFBC, #FC354C);
     font-family: 'Nanum Brush Script', cursive;
     font-size:x-large;
-   
 }
 section li, td,th{
     font-family: 'Space Mono', monospace;
@@ -36,9 +35,12 @@ section li, td,th{
 }
 main > p{
     font-family: 'Space Mono', monospace;
-    text-align: center;
-    
-    
+    padding: 50px;
+    max-width: 400px;
+    background-color: rgb(235, 232, 232);
+    margin-left: 20px;
+    max-height: 260px;
+    grid-column-start: 1;
 }
 
 a, a:link, a:visited, a:active, a:hover {
@@ -66,4 +68,25 @@ table{
 }
 #listTitle{
     color: black;
+}
+main{
+    display: grid;
+    grid-template-columns: 33%,33%,33%;
+    grid-template-rows: 1fr,1fr,1fr,1fr;
+
+}
+#tutorials{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#homework{
+    /* grid-column-start: 3; */
+    
+}
+#inspiration{
+    grid-column-start: 2;
+    grid-row-start: 1;
+
 }
