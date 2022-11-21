@@ -12,6 +12,8 @@ async function fetchCourses() {
 } 
 function displayResults(fall, spring){
 
+    // clear the container so we don't have repeating classes
+    document.querySelector('#results').innerHTML = '';
     console.log(fall);
     
   
