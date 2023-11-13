@@ -7,6 +7,9 @@ async function fetchCourses() {
     const spring2023 = `https://meteor.unca.edu/registrar/class-schedules/api/v1/courses/2023/spring/`;
     springData = await fetch(spring2023).then(response => response.json());
 
+    const fall2023 = `https://meteor.unca.edu/registrar/class-schedules/api/v1/courses/2023/fall/`;
+    fall2023Data = await fetch(spring2023).then(response => response.json());    
+
     displayResults(fallData, springData);
 
 } 
@@ -71,3 +74,8 @@ function displayResults(fall, spring){
 let csci185 ="Introduction to web page design and development. Topics include style sheets, dynamic content, scripting languages, and event handling. Students may receive credit for only one course from CSCI 182, 183 and 185."
 let csci202 = "Data structures (lists, stacks, queues, binary trees, hash tables); searching and sorting algorithms; use of a modern, object-oriented programming language. Successful completion of this course with a grade of C or higher is required to progress through the Computer Science major or minor.";
 let csci201 = "An introduction to problem solving, algorithm design, implementation, and testing using object-oriented programming principles. Emphasis is placed on event-driven programming methods, including creating and manipulating objects, classes, and using object-oriented tools such as the class debugger.";
+let csci333 = ""
+let csci235 = ""
+let csci312 = ""
+let csci_cyber = "" // i forgot the num
+// softawre engineering, data base management, and more coming!
